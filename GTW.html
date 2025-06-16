@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTN</title>
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    <script>
+        let guessedNumber = prompt('An welche Zahl zwischen 1-100 denke ich gerade? (Hinweiß: TaEagDK)')
+        while (guessedNumber != '83') { //solange das erratene Wort nicht das gesuchte ist
+            guessedNumber = prompt("Nein. Das ist es nicht. Versuchen Sie es noch einmal. (Hinweiß: TaEagKD)");
+        }
+        alert ("Herzlichen Glückwunsch. Das ist die richtige Zahl.") //Nach Verlassen der Schleife
+        document.write("Gut gemacht!" + '<br>');
+        document.write('Die Lösung ist im binären System. ' + '<br>' + 'Ein Großbuchstabe steht für die 1, ein kleiner für die 0. ' + '<br>');
+        document.write('Wenn man die 0 und 1 wieder in eine Zahl umwandelt, kommt da die 83 raus.' + '<br>');
+    </script>
+</body>
+</html>

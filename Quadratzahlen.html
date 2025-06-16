@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratzahlen</title>
+</head>
+<body>
+    <h1>Quadratzahlen</h1>
+    <p>Hier sehen wir, was die Differenz aus zwei nacheinander liegenden Quadratzahlen ist</p>
+    <script>
+        let n = prompt('Geben Sie die Anfangszahl an');
+    </script>
+    <script>
+        let quadratZahl = n * n;
+            document.write ( n + '*' + n + '=' + quadratZahl + '<br>');
+    </script>
+    <script>
+        let neuN = n - 1;
+    </script>
+    <script>
+        let quadratZahlNeu = neuN * neuN;
+        document.write ( neuN + '*' + neuN + '=' + quadratZahlNeu + '<br>');
+    </script>
+    <script>
+        let ergebnis = quadratZahl - quadratZahlNeu;
+        document.write ( quadratZahl + '-' + quadratZahlNeu + '=' + ergebnis + '<br>');
+        document.write ('Das Ergebnis dieser Rechnung ist: ' + ergebnis + '.<br>');
+    </script>
+    <script>
+        console.log (n);
+        console.log (quadratZahl);
+        console.log (neuN);
+        console.log (quadratZahlNeu);
+        console.log (ergebnis);
+    </script>
+</body>
+</html>

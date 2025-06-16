@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <script src="TR.js"></script>
+</head>
+<body>
+    <h1>Taschenrechner einfach</h1>
+    <script>
+        switch (rechenZeichen) {
+    case "+" :
+        let summe = Number(zahl1) + Number (zahl2);
+        document.write(zahl1 + rechenZeichen +zahl2 + "=" + summe); 
+        break;
+
+    case "-" :
+        let differenz = Number(zahl1) - Number (zahl2);
+        document.write(zahl1 + rechenZeichen +zahl2 + "=" + differenz); 
+        break;
+
+    case "*" :
+        let produkt = Number(zahl1) * Number (zahl2);
+        document.write(zahl1 + rechenZeichen +zahl2 + "=" + produkt); 
+        break;
+
+    case "/" :
+        let quotient = Number(zahl1) / Number (zahl2);
+        document.write(zahl1 + rechenZeichen +zahl2 + "=" + quotient); 
+        break;
+
+    default:
+        console.log("Tut mir leid, dies ist leider (noch) nicht möglich!")
+    } 
+    </script>
+</body>
+</html>
